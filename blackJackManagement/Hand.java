@@ -3,10 +3,24 @@ import java.util.*;
 
 public class Hand{
 
-  private ArrayList<Card>playerHand;
+  private ArrayList<Card> cardsInHand;
 
   public Hand(){
-    this.playerHand = new ArrayList<Card>();
+    this.cardsInHand = new ArrayList<Card>();
   }
+
+
+  public ArrayList getCardsInHand(){
+    return this.cardsInHand;
+  }
+
+  public void addDealtCardToHand(Card dealtCard){
+    cardsInHand.add(dealtCard);
+  }
+
+  public int valueOfHand(){
+    
+  }
+
 
 }

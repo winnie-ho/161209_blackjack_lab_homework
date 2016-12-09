@@ -1,8 +1,8 @@
 package blackJackManagement;
 
 public class Card{
-  private ValueType value;
   private SuitType suit;
+  private ValueType value;
 
   public Card ( SuitType suit, ValueType value){
     this.suit = suit;
