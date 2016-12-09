@@ -16,4 +16,12 @@ public class Card{
   public ValueType getValue(){
     return this.value;
   }
+
+  public int getValueInteger(){
+    return value.ordinal()+1;
+  }
+
+  public void printCard(){
+  System.out.println(this.value + " of " + this.suit);
+  }
 }

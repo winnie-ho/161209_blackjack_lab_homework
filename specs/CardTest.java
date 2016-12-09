@@ -21,4 +21,9 @@ public class CardTest {
   public void hasValue() {
     assertEquals(ValueType.ACE, card.getValue());
   }
+
+  @Test
+  public void showCardDetails() {
+    card.printCard();
+  }
 }

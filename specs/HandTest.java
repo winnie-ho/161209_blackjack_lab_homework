@@ -13,16 +13,22 @@ public class HandTest {
   @Before
   public void before(){
     hand = new Hand();
-    card1 = new Card (SuitType.CLUBS, ValueType.TWO);
-    card2 = new Card (SuitType.CLUBS, ValueType.EIGHT);
+    card1 = new Card (SuitType.CLUBS, ValueType.FIVE);
+    card2 = new Card (SuitType.CLUBS, ValueType.FOUR);
     player = new Player ("Winnie", hand);
   }
+
+
 
 
   @Test
   public void getValueOfHand() {
     hand.addDealtCardToHand(card1);
     hand.addDealtCardToHand(card2);
-    assertEquals(6,hand.valueOfHand());
+    assertEquals(9, hand.valueOfHand());
+    
+    // hand.valueOfHand();
+    // System.out.println(card1.getValueInteger());
+    // System.out.println(card2.getValueInteger());
   }
 }

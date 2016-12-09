@@ -18,8 +18,13 @@ public class Hand{
     cardsInHand.add(dealtCard);
   }
 
+
   public int valueOfHand(){
-    
+    int count = 0;
+    for (Card card : cardsInHand) {
+      count = count + card.getValueInteger();
+      }
+    return count;
   }
 
 
