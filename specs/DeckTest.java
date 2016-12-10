@@ -18,9 +18,20 @@ public class DeckTest {
   }
 
   @Test
+  public void printOutAllDeck() {
+    deck.printDeck();
+  }
+
+  @Test
   public void deckRemovesACardUponDeal() {
     deck.deal();
     assertEquals(51, deck.sizeOfDeck());
   }
+
+  // @Test
+  // public void deckCanShuffle() {
+  //   deck.shuffleDeck();
+  //   System.out.println();
+  // }
 
 }

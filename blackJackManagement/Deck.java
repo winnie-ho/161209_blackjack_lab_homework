@@ -20,6 +20,16 @@ public class Deck{
     return packOfCards.size();
   }
 
+  public void printDeck() {
+    for (Card card : packOfCards){
+      System.out.println(card.getValue() + " of " +card.getSuit());
+    }
+  }
+
+  // public void shuffleDeck(){
+  //   Collections.shuffle(packOfCards);
+  // }
+
   public void deal(){
     Card dealtCard = packOfCards.remove(0);
 
