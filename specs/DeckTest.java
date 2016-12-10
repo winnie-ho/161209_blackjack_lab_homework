@@ -28,10 +28,11 @@ public class DeckTest {
     assertEquals(51, deck.sizeOfDeck());
   }
 
-  // @Test
-  // public void deckCanShuffle() {
-  //   deck.shuffleDeck();
-  //   System.out.println();
-  // }
+  @Test
+  public void deckCanShuffle() {
+    System.out.println("-----");
+    deck.shuffleDeck();
+    deck.printDeck();
+  }
 
 }

@@ -26,9 +26,9 @@ public class Deck{
     }
   }
 
-  // public void shuffleDeck(){
-  //   Collections.shuffle(packOfCards);
-  // }
+  public void shuffleDeck(){
+    Collections.shuffle(packOfCards);
+  }
 
   public void deal(){
     Card dealtCard = packOfCards.remove(0);
