@@ -39,12 +39,13 @@ public class Game{
           System.out.println("You have a hand value of "+ playerHand.valueOfHand());
         }
 
+          System.out.println("The dealer has a hand value of "+ dealerHand.valueOfHand());
 
              if(playerHand.valueOfHand()>21){
-                System.out.println("You're Bust!");
+                System.out.println("You're Bust! The Dealer wins!");
               }
               else if(dealerHand.valueOfHand()>21){
-                System.out.println("Dealer is Bust!");
+                System.out.println("Dealer is Bust! You Win!");
               }
               else if(playerHand.valueOfHand()>dealerHand.valueOfHand()){
                 System.out.println("You win! Your hand value is greater than the dealers' hand.");
@@ -55,7 +56,6 @@ public class Game{
 
 
 
-      // System.out.println("The dealer has a hand value of "+ dealerHand.valueOfHand());
 
 
 
