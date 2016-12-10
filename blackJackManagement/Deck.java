@@ -22,7 +22,7 @@ public class Deck{
 
   public void printDeck() {
     for (Card card : packOfCards){
-      System.out.println(card.getValue() + " of " +card.getSuit());
+      System.out.println(card.getValue() + " (" +card.getValueInteger() + ") of " + card.getSuit());
     }
   }
 

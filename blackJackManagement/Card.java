@@ -18,7 +18,13 @@ public class Card{
   }
 
   public int getValueInteger(){
+    if 
+      (value.ordinal() <= 9){
     return value.ordinal()+1;
+  }
+  else{
+      return 10;
+  }
   }
 
   public void printCard(){
