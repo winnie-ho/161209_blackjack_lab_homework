@@ -7,13 +7,16 @@ public class PlayerTest {
 
   Player player;
   Hand hand;
-  Card card;
+  Card card1;
+  Card card2;
   
   @Before 
   public void before() {
     hand = new Hand();
     player = new Player("Tegan", hand);
-    card = new Card(SuitType.DIAMONDS, ValueType.TWO);
+    card1 = new Card(SuitType.DIAMONDS, ValueType.TWO);
+    card2 = new Card(SuitType.DIAMONDS, ValueType.FOUR);
+
   }
 
   @Test
@@ -22,8 +25,13 @@ public class PlayerTest {
   }
 
   @Test
+  public void hasHand(){
+    assertNotNull(hand);
+  }
+
+  @Test
   public void hasCardInHand() {
-    hand.addDealtCardToHand(card);
+    hand.addDealtCardToHand(card1);
     assertEquals(1, player.handSize());
   }
 

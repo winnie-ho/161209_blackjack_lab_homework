@@ -16,6 +16,10 @@ public class Deck{
     }
   }
 
+  public ArrayList getDeck(){
+    return this.packOfCards;
+  }
+
   public int sizeOfDeck(){
     return packOfCards.size();
   }
@@ -30,9 +34,13 @@ public class Deck{
     Collections.shuffle(packOfCards);
   }
 
-  public void deal(){
+  public Card deal(){
     Card dealtCard = packOfCards.remove(0);
-
+    return dealtCard;
+  }
+  
+  public void printDealtCard(Card dealtCard) {
+    System.out.println("Dealt card is " + dealtCard.getValueInteger() + " of " + dealtCard.getSuit());
   }
 
 }

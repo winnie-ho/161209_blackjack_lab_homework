@@ -24,8 +24,9 @@ public class DeckTest {
 
   @Test
   public void deckRemovesACardUponDeal() {
-    deck.deal();
+    Card dealtCard = deck.deal();
     assertEquals(51, deck.sizeOfDeck());
+    deck.printDealtCard(dealtCard);
   }
 
   @Test
